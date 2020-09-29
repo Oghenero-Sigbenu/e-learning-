@@ -1,0 +1,27 @@
+button {
+    border:none;
+    padding: .3em 2em;
+    margin: 20px auto;
+    border-radius: 6px;
+  }
+  .btn-pry{
+      background: rgb(71, 201, 245);
+      color: white;
+  }
+  .btn-pry:hover {
+    background: white;
+    color: rgb(71, 201, 245);
+    border: 1px solid #C6D4DB;
+  }
+  
+  .btn-trans {
+    border: 1px solid #C6D4DB;
+    color: #2FBCB4;
+    background: none;
+  }
+  
+  .btn-wht:hover {
+    background: white;
+    color: black;
+  }
+  
