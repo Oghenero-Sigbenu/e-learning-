@@ -1,7 +1,4 @@
 import React, {Component} from "react";
-// import {
-//    TextField 
-// }from "@material-ui/core";
 import TextField from "../common/inputValidator";
 import { reg } from '../common/validation';
 import {NavLink} from "react-router-dom";
@@ -51,12 +48,11 @@ class Login extends Component {
                       <TextField id="standard" label="Password" value={password} name="password" type="password" onChange={this.handleChange}/>
                       <div className="flex">
                         <button className="new">Login</button>
-                      {/* <button className="trans"><NavLink to="/register">Create Account</NavLink></button> */}
                       </div>
                 </form>
                 </div>
                 </div>
-                <small>New to Credity? <NavLink to="/signup">Create an account</NavLink></small>
+                <small>New to BOOKS? <NavLink to="/signup">Create an account</NavLink></small>
              </div>
     )
 }
