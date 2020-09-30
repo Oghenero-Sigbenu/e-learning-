@@ -3,6 +3,7 @@ button {
     padding: .3em 2em;
     margin: 20px auto;
     border-radius: 6px;
+    color: white;
   }
   .btn-pry{
       background: rgb(71, 201, 245);
@@ -16,7 +17,7 @@ button {
   
   .btn-trans {
     border: 1px solid #C6D4DB;
-    color: #2FBCB4;
+    color:rgb(71, 201, 245);
     background: none;
   }
   

@@ -5,3 +5,74 @@
 .link{
   margin-top: 25px;
 }
+.center{
+  margin-top: -70px;
+  margin-bottom: 40px;
+}
+.banner{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: purple;
+  padding-top:200px;
+  top: -130px;
+}
+.container-fluid{
+  padding: 0 !important;
+}
+img{
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+.peach{
+  background: rgb(241, 182, 241);
+  width: 100%;
+}
+.pd{
+  padding: 2.5em 0;
+}
+.home .row{
+  justify-content: center !important;
+  margin: 0 auto!important;
+}
+.why{
+  width: 86% !important;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.flex3{
+  display: flex;
+  justify-content: space-between;
+}
+.flex2{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.inner-box{
+  width: 100%;
+  padding: 15px;
+  /* border-radius: 10px; */
+  /* background-clip: padding-box; */
+  background-color: #fff;
+  box-shadow: 0 1px 10px 0 rgba(184,189,209,.7);
+}
+.error{
+  color: red;
+}
+.box1{
+  margin:20px auto;
+  text-align: center;
+   width: 400px;
+}
+.login{
+  padding-top: 50px;
+}
+.new{
+  width: 90%;
+  background: purple;
+}

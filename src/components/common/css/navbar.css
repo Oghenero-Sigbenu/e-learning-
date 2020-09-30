@@ -1,4 +1,5 @@
 .nav{
+    z-index:2000;
     width: 100%;
     color:  lightblue !important;
     background-color: transparent;
