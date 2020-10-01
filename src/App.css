@@ -1,17 +1,14 @@
-.App {
-  text-align: center;
-}
 
 .link{
   margin-top: 25px;
 }
-.center{
+.center1{
   margin-top: -70px;
   margin-bottom: 40px;
 }
 .banner{
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background: purple;
   padding-top:200px;
@@ -20,17 +17,14 @@
 .container-fluid{
   padding: 0 !important;
 }
-img{
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
-}
+
+
 .peach{
   background: rgb(241, 182, 241);
   width: 100%;
 }
 .pd{
-  padding: 2.5em 0;
+  padding: 5em 0;
 }
 .home .row{
   justify-content: center !important;
@@ -38,6 +32,7 @@ img{
 }
 .why{
   width: 86% !important;
+  text-align: center;
 }
 .flex{
   display: flex;
@@ -76,3 +71,70 @@ img{
   width: 90%;
   background: purple;
 }
+.btn-p{
+  background:purple;
+  color: white;
+  margin: 20px auto;
+}
+.white{
+  background: white;
+  color: purple;
+}
+.navbar-nav .dropdown-menu {
+  background: transparent;
+}
+.login h4, .login small{
+  color: purple !important;
+}
+.home-text{
+  text-align: left;
+  color: white;
+  padding-left: 6em !important;
+}
+h4{
+  font-size: 30px !important;
+  font-weight: 600 !important;
+}
+h5{
+  font-size: 25px !important;
+  font-weight: 400 !important;
+}
+h4, h5, .container-fluid p{
+  color: rgb(68, 2, 68);
+}
+.icon{
+  font-size: 30px;
+  color: violet !important;
+}
+.fle{
+  display: flex;
+  justify-content: center;
+}
+.margin{
+  text-align: center !important;
+}
+.pd .col-md-6 img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.banner-img img{
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+@media screen and (max-width: 900px){
+.banner{
+  width: auto !important;
+}
+
+}
+
+@media screen and (min-width: 900px){
+  .banner{
+   height: 100vh !important;
+  }
+  .banner-img{
+    margin-top: -80px;
+  }
+  }

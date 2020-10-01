@@ -1,23 +1,27 @@
 .nav{
     z-index:2000;
     width: 100%;
-    color:  lightblue !important;
+    color:  white !important;
     background-color: transparent;
     padding: 1em 5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri,'Trebuchet MS', sans-serif;
 }
 .navbar-light .navbar-toggler {
-  color: #1C716C !important;
+    color:  white !important;
     border-color:  #1C716C !important;
     margin-right: 40px;
 }
 .nav-link{
-    color:  #1C716C !important;
+    color:  white !important;
     margin-left: 20px;
+    font-size:14px;
+
+}
+.nav-item{
+    /* margin-top:20px !important; */
 }
 .nav-link:hover{
-    background: transparent !important;
-
+    /* background: transparent !important; */
 }
 .center{
     /* justify-content: right !important; */
@@ -32,6 +36,7 @@
     padding: 15px;
     /* margin-left: 50px; */
     width: 150px;
+    margin-top: 10px;
 }
 .logo img{
     width: 100%;

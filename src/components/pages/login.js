@@ -1,9 +1,11 @@
 import React, {Component} from "react";
 import TextField from "../common/inputValidator";
 import { reg } from '../common/validation';
-import {NavLink} from "react-router-dom";
-
-
+import {NavLink,Redirect} from "react-router-dom";
+import { connect } from 'react-redux';
+import {login} from "../../actions/user";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +19,9 @@ class Login extends Component {
     this.submit = this.submit.bind(this);
   }
   componentDidMount(){
-  
+    if(this.props.token){
+      this.props.history.push("/");
+    }
   }
   handleChange(title, value, disable){
     const { email, password} = this.state;
@@ -28,35 +32,53 @@ class Login extends Component {
   }
   submit(e) {
     e.preventDefault();
-    setTimeout(() => {
-      this.props.history.push("/");
-    }, 500);
+    const {email, password} = this.state;
+    this.props.login({email, password})
     this.setState({
       show: false
     })
   }
   render(){
     const {email, password} = this.state;
+    const {isLoading, token} = this.props;
     return(
-            <div className="login">
-                  <h4>Welcome Back!</h4>
-                <small>Enter your sign in information to continue</small>
-                <div className="box1">
-                  <div className="inner-box">
-                <form autoComplete="off" onSubmit={this.submit}>
-                      <TextField id="email" label="Email address" helperText="Invalid email address" valType="email" name="email" type="email" value={email} getValue={this.handleChange} />
-                      <TextField id="standard" label="Password" value={password} name="password" type="password" onChange={this.handleChange}/>
-                      <div className="flex">
-                        <button className="new">Login</button>
-                      </div>
-                </form>
-                </div>
-                </div>
-                <small>New to BOOKS? <NavLink to="/signup">Create an account</NavLink></small>
-             </div>
+      <div className="login">
+        <>
+            {token ? <Redirect to="/"/>:
+            <>
+                <h4>Welcome Back!</h4>
+              <small>Enter your sign in information to continue</small>
+              <div className="box1">
+                <div className="inner-box">
+              <form autoComplete="off" onSubmit={this.submit}>
+                    <TextField id="email" label="Email address" helperText="Invalid email address" valType="email" name="email" type="email" value={email} getValue={this.handleChange} />
+                    <TextField id="standard" label="Password" value={password} name="password" type="password"  getValue={this.handleChange}/>
+                    <div className="flex">
+                      <button className="new">{isLoading ?
+                      <FontAwesomeIcon icon={faSpinner} />
+                       :"Login"}</button>
+          
+                    </div>
+              </form>
+              </div>
+              </div>
+              <small>New to LORE? <NavLink to="/signup">Create an account</NavLink></small>
+            </>
+            }
+            </>
+            </div>
     )
 }
 }
 
+const mapStateToProps = (state) => {
+  const { token, isLoading, msg, isLoggedIn } = state.auth;
+  return {
+    token,
+    isLoading,
+    msg,
+    isLoggedIn,
+  }
+}
 
-export default Login;
+export default connect(mapStateToProps,{login} )(Login);

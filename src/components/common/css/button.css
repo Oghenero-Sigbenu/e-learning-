@@ -1,28 +1,27 @@
 button {
     border:none;
-    padding: .3em 2em;
+    padding: .4em 2em;
     margin: 20px auto;
     border-radius: 6px;
-    color: white;
   }
   .btn-pry{
-      background: rgb(71, 201, 245);
-      color: white;
+      background:white;
+      color: purple;
   }
-  .btn-pry:hover {
+  /* .btn-pry:hover {
     background: white;
     color: rgb(71, 201, 245);
     border: 1px solid #C6D4DB;
-  }
+  } */
   
   .btn-trans {
-    border: 1px solid #C6D4DB;
-    color:rgb(71, 201, 245);
+    border: 1px solid white;
+    color:white;
     background: none;
   }
   
-  .btn-wht:hover {
+  /* .btn-wht:hover {
     background: white;
     color: black;
-  }
+  } */
   

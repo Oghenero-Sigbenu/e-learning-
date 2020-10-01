@@ -2,7 +2,7 @@ import React from "react";
 import "./css/footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faFacebook, faInstagram, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+// import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
 const Footer = ({hide}) => {
   return (
     <div className={`footer ${hide ? "half-height": "height"}`}>
@@ -10,24 +10,15 @@ const Footer = ({hide}) => {
       <div className="text">
         {hide ? "no love" :
         <>
-        <div className="text1">
-          <p>FRESHY is Nigeria’s number one healthy
-             food chain, providing fresh, yummy, delicious, nutrient-rich
-              healthy meals and committed to promoting a healthy 
-              lifestyle. FRESHY IS BEST and that is how we win every day,
-               selling a wide range of fresh salads, 60%juices, smoothies, parfait,
-                sandwich and other quick on the go healthy meals.</p>
-        </div>
-        {/* <div className="flex2 newsletter">
-              <p><strong><FontAwesomeIcon icon={faEnvelopeOpen} /> Newsletter</strong></p>
-              <p>Signup for FRESHY tips, news and updates.</p>
-          <div>
-            <div className="subscribe">
-              <input type="email" name="email" required/>
-              <button>Subscribe</button>
-            </div>
+        <div className="row">
+          <div className="col-md-9 ">
+          <p className="text-center"> Our app features over 8 years of past WAEC questions with detailed solutions in Mathematics, Physics, 
+          Chemistry and Biology; making it an excellent tool for preparing for and cracking WAEC. Students in SSS/SHS 3 
+          classes in Nigeria, Ghana, Sierra Leone, Liberia and the Gambia can take advantage of this quality resource put 
+          together by excellent lesson teachers to pass WAEC/WASSCE exams. Timed practice WAEC exams available on the app 
+          not only help SS/SHS 3 students to measure their preparedness, it also helps them learn time management, WAEC exam format, and accuracy skills.</p>
           </div>
-        </div> */}
+        </div>
         </>}
         <div className="">
           <ul className="flex2 menu">
