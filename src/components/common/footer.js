@@ -34,7 +34,7 @@ const Footer = ({hide}) => {
             <li><FontAwesomeIcon icon={faTwitter} /> </li>
             <li><FontAwesomeIcon icon={faWhatsapp } /> </li>
           </ul>
-          <p>FRESHY Market © 2020.</p>
+          <p>LERO © 2020.</p>
         </div>
         </div>
     </div>
