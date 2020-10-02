@@ -114,13 +114,13 @@ function Home() {
           </div>
         </div>
           <div className="peach pd">
-          <h4 className="text-center center1">What we offer?</h4>
-        <div className="row why pd">
+          <h4 className="text-center center1">Why LERO?</h4>
+        <div className="row why">
             <div className="col-md-4">
               <p className="icon"> 
           <FontAwesomeIcon icon={faTools} />
               </p>
-                <h5>Live classes</h5>
+                <h5>Trusted Content</h5>
                 <p>Get access to daily Live Lessons taught by the best tutors.
                    Join unlimited lessons explaining difficult topics in Maths, 
                    English, Science subjects and more. </p>
@@ -129,7 +129,7 @@ function Home() {
               <p className="icon">
             <FontAwesomeIcon icon={faTools} />
                 </p>
-                <h5>Free exam practice questions</h5>
+                <h5>Easily Accessible</h5>
                 <p>Prepare ahead for upcoming exams, revise concepts you’ve been
                    taught and get real time assessments on your performance.</p>
             </div>
@@ -137,7 +137,7 @@ function Home() {
             <p className="icon">
           <FontAwesomeIcon icon={faTools} />
               </p>
-                <h5>Video library</h5>
+                <h5>Free Service</h5>
                 <p>Learn at your own pace and choose from thousands of richly animated
                    videos explaining all topics in the Junior and Senior secondary curriculum.</p>
             </div>

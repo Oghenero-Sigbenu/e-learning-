@@ -7,6 +7,7 @@ import {NavLink, Redirect} from "react-router-dom";
 import {register} from "../../actions/user";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import Navbar from "../common/navbar";
 
 class Signup extends Component {
   constructor(props) {
@@ -51,6 +52,7 @@ class Signup extends Component {
     const {token, isLoading} = this.props;
     return (
       <AnimateInOut className={show ? 'slide-in-top one' : 'slide-out-left'}>
+        <Navbar purple={true}/>
           {token ? <Redirect to="/"/>:
       <div className="login pb-5">
       <h4>Create your account!</h4>

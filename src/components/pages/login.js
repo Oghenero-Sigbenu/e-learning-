@@ -6,6 +6,8 @@ import { connect } from 'react-redux';
 import {login} from "../../actions/user";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import Navbar from "../common/navbar";
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -42,6 +44,8 @@ class Login extends Component {
     const {email, password} = this.state;
     const {isLoading, token} = this.props;
     return(
+      <>
+       <Navbar purple={true}/>
       <div className="login">
         <>
             {token ? <Redirect to="/"/>:
@@ -67,6 +71,7 @@ class Login extends Component {
             }
             </>
             </div>
+            </>
     )
 }
 }

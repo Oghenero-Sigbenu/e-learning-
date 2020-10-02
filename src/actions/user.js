@@ -30,7 +30,7 @@ export const start = () => ({
             localStorage.setItem("user", JSON.stringify(user));
             dispatch(authSuccess(token, user, msg))
         })
-        .catch(err => dispatch(authFailed(err.response.data)))
+        .catch(err => dispatch(authFailed(err.response)))
     }
   }
 
@@ -44,7 +44,7 @@ export const start = () => ({
             localStorage.setItem("user", JSON.stringify(user));
             dispatch(authSuccess(token, user, msg))
         })
-        .catch(err => dispatch(authFailed(err.response.data)))
+        .catch(err => dispatch(authFailed(err.response)))
     }
   }
 

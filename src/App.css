@@ -66,10 +66,12 @@
 }
 .login{
   padding-top: 50px;
+  text-align: center !important;
 }
 .new{
   width: 90%;
   background: purple;
+  color: white !important;
 }
 .btn-p{
   background:purple;

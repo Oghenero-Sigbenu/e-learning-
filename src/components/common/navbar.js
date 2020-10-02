@@ -32,14 +32,16 @@ class AppNavbar extends Component {
 
 	render() {
 		// const { white } = this.state;
-		const { user, token } = this.props;
+		const { user, token, purple } = this.props;
 		// const { toggle, isOpen } = this.state;
 		return (
 			<div >
 				<Navbar dark className="nav" expand="md">
 					<NavbarBrand tag={NavLink} to="/" >
-						<div className="logo"><h2>LORE</h2></div>
+						<div className={`logo ${purple ? "logo-p" : "logo"}`}><h2>LORE</h2></div>
 					</NavbarBrand>
+					{purple ? "" :
+					<>
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
@@ -87,6 +89,8 @@ class AppNavbar extends Component {
 								)}
 						</Nav>
 					</Collapse>
+				</>
+					}
 				</Navbar>
 			</div>
 		);
